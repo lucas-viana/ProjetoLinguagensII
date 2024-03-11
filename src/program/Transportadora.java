@@ -1,9 +1,4 @@
 package program;
-idEntrega: int
-pedido: Pedido
-transportadora: Transportadora
-dataEntrega: Date
-status: String
 
 public class Transportadora {
     private static int id;

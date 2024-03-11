@@ -7,12 +7,14 @@ public class Produto {
     private double preco;
     private int idProduto;
     private int qtd;
+    private Fornecedor fornecedor;
 
-    public Produto(String nome, String descricao, int qtd, double preco) {
+    public Produto(String nome, String descricao, int qtd, double preco,Fornecedor fornecedor) {
         this.preco = preco;
         this.nome = nome;
         this.descricao = descricao;
         this.qtd = qtd;
+        this.fornecedor=fornecedor;
         this.idProduto = id;
         id++;
     }
@@ -51,5 +53,13 @@ public class Produto {
 
     public void setPreco(double preco) {
         this.preco = preco;
+    }
+
+    public Fornecedor getFornecedor() {
+        return fornecedor;
+    }
+
+    public void setFornecedor(Fornecedor fornecedor) {
+        this.fornecedor = fornecedor;
     }
 }

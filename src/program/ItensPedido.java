@@ -1,8 +1,6 @@
 package program;
 
 import java.util.ArrayList;
-import java.util.Date;
-import java.util.Enumeration;
 import java.util.List;
 
 /*Classe: Produto
@@ -35,18 +33,18 @@ dataPedido: Date
 itensPedido: List<ItemPedido>
 Classe: ItemPedido
 */
-public class ItemPedido {
+public class ItensPedido {
     private static int id;
     private int idPedido;
     private Cliente cliente;
     private String dataPedido;
     private List<Produto> listProduto = new ArrayList<>();
 
-    public ItemPedido(int idPedido, Cliente cliente, String dataPedido, List<Produto> listProduto) {
-        this.idPedido = idPedido;
+    public ItensPedido(Cliente cliente, String dataPedido) {
+        this.idPedido = id;
+        id++;
         this.cliente = cliente;
         this.dataPedido = dataPedido;
-        this.listProduto = listProduto;
     }
 
     public static int getId() {

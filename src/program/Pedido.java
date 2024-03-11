@@ -7,12 +7,12 @@ public class Pedido {
 	private int idPedido;
 	private Cliente cliente;
 	private String dataPedido;
-	private ItemPedido itemPedido;
+	private ItensPedido itensPedido;
 
-	public Pedido(Cliente cliente, String dataPedido, ItemPedido itemPedido) {
+	public Pedido(Cliente cliente, String dataPedido, ItensPedido itensPedido) {
 		this.cliente = cliente;
 		this.dataPedido = dataPedido;
-		this.itemPedido = itemPedido;
+		this.itensPedido = itensPedido;
 		this.idPedido = id;
 		id++;
 	}
@@ -33,9 +33,9 @@ public class Pedido {
 		this.dataPedido = dataPedido;
 	}
 	public List<Produto> getItemPedido() {
-		return itemPedido.getListProduto();
+		return itensPedido.getListProduto();
 	}
-	public void setItensPedido(ItemPedido itemPedido) {
-		this.itemPedido = itemPedido;
+	public void setItensPedido(ItensPedido itensPedido) {
+		this.itensPedido = itensPedido;
 	}
 }
